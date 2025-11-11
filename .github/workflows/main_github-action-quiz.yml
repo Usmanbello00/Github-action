@@ -46,8 +46,8 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'ghas-quiz'
+          app-name: 'github-action-quiz'
           slot-name: 'Production'
-          package: ./dist
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5681073E3BB74CDB9EB7D2D1CBB28802 }}
+          package: .
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DBF916E4F1C2419280B0E04147AFBB52 }}
 
